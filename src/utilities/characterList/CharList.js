@@ -3,7 +3,7 @@ import CharacterCard from './CharacterCard.js'
 
 function CharList () {
   return (
-    <div className='charList'>
+    <div className='scrollContain'>
       <CharacterCard />
     </div>
   )

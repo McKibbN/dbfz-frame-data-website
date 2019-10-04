@@ -3,7 +3,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0
 }
 
+/* header */
+
 .headerContain {
+  position: fixed;
+  top: 0;
+  z-index: 3;
   width: 100vw;
   height: 9vh;
   display: flex;
@@ -27,12 +32,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 2vw
 }
 
-.charList {
+/* scrollContain */
+
+.scrollContain {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5vw
+  padding: 9vh 0 5vw 0
 }
+
+/* characterCard */
 
 .charCardContain {
   width: 85vw;
@@ -45,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   width: 25vw;
   height: 15vw;
-  z-index: 2;
+  z-index: 2
 }
 
 .charNameContain {
@@ -58,9 +67,88 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .charNameContain:hover {
-  box-shadow: 1.5vw 1.5vw 0 black;
+  box-shadow: 1.5vw 1.5vw 0 black
 }
 
 .charName {
   margin-left: 25vw
+}
+
+/* MoveList */
+
+.menuCategory {
+  width: 100vw;
+  background: #d1d1d1;
+  margin-top: 5vw;
+  padding: 2vh 0 1vh
+}
+
+.categoryName {
+  width: 90vw;
+  margin-left: 5vw
+}
+
+.moveCardContain {
+  width: 100vw;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  border-bottom: .75px solid black
+}
+
+.moveImg {
+  height: 17.5vw;
+  z-index: 2;
+}
+
+.moveTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vw;
+}
+
+/* Data Contain */
+
+.imgContain {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1e1e1;
+  padding: 5vw 0
+}
+
+.dataImg {
+  width: 50vw
+}
+
+.dataCategory {
+  width: 90vw;
+  background: #d1d1d1;
+  margin-top: 5vw;
+  padding: 2vh 0 1vh
+}
+
+.dataCategoryName {
+  width: 80vw;
+  margin-left: 2vw
+}
+
+.item {
+  width: 86vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2vw 0;
+  margin: 0 2vw;
+  border-bottom: .75px solid black
+}
+
+.dataType {
+  width: 50vw
+}
+
+.dataVar {
+  width: 36vw
 }

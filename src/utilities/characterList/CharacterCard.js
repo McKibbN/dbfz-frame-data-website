@@ -1,5 +1,5 @@
 import React from 'react'
-import CharImg from './assets/16Card.png'
+import CharImg from '../assets/16Card.png'
 
   class CharacterCard extends React.Component {
     constructor() {
@@ -17,7 +17,7 @@ import CharImg from './assets/16Card.png'
             <h4 className='charName'>{this.state.charName}</h4>
           </div>
         </div>
-      )
+      )}
     }
-  }
+
 export default CharacterCard
