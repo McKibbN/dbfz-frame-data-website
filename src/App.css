@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0
+}
+
+.headerContain {
+  width: 100vw;
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1bad4f
+}
+
+.logo {
+  width: 5vh;
+  height: 5vh;
+  padding: 3vw;
+  margin-left: 2vw
+}
+
+.menu {
+  width: 4vh;
+  height: 4vh;
+  padding: 3vw;
+  margin-right: 2vw
+}
+
+.charList {
+  display: flex;
+  align-items: center;
+  padding-top: 5vw
+}
+
+.charCardContain {
+  width: 90vw;
+  background-color: white;
+  height: inherit;
+  margin: 0 5vw
+}
+
+.charImg {
+  position: absolute;
+  width: 25vw;
+  height: 15vw
+}
+
+.charNameContain {
+  height: 14vw;
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+  border: .5vw black solid
+}
+
+.charName {
+  margin-left: 25vw
+}
