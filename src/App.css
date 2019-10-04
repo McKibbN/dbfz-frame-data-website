@@ -15,12 +15,11 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #1bad4f
+  background-color: #603CA3
 }
 
 .logo {
   width: 5vh;
-  height: 5vh;
   padding: 3vw;
   margin-left: 2vw
 }
