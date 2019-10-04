@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './utilities/Header.js'
-import Content from './utilities/Content.js'
+import CharList from './utilities/CharList.js'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Content />
+      <CharList />
     </div>
   );
 }

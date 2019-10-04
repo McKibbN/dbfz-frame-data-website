@@ -1,7 +1,7 @@
 import React from 'react'
 import CharacterCard from './CharacterCard.js'
 
-function Content () {
+function CharList () {
   return (
     <div className='charList'>
       <CharacterCard />
@@ -9,4 +9,4 @@ function Content () {
   )
 }
 
-export default Content
+export default CharList
