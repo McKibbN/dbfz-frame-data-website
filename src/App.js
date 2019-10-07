@@ -1,7 +1,5 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { connect } from 'react-redux'
-import { resetNavigation } from './actions/navigationController'
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Header from './utilities/Header.js'
 import CharList from './utilities/characterList/CharList.js'
 import MoveList from './utilities/moveList/MoveList.js'
@@ -20,7 +18,5 @@ function App() {
     </Router>
   )
 }
-
-
 
 export default App;
