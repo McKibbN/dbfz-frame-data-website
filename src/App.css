@@ -1,6 +1,12 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, ul, li {
   margin: 0;
-  padding: 0
+  padding: 0;
+  list-style: none;
+}
+
+li:hover {
+  background-color: #603CA3;
+  color: white
 }
 
 /* header */
@@ -15,20 +21,82 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #603CA3
+  background-color: #603CA3dd
 }
 
 .logo {
   width: 5vh;
   padding: 3vw;
-  margin-left: 2vw
+  margin: 0 2vw
 }
 
-.menu {
+.menuListDesktop {
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.menuListDesktop li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 5vw;
+  color: white
+}
+
+.menuIcon, .exitMenuIcon {
   width: 4vh;
   height: 4vh;
-  padding: 3vw;
+  padding: 1vh;
   margin-right: 2vw
+}
+
+.exitMenuIcon {
+  margin: 1.5vh 2vw;
+}
+
+/* Drawer Contain */
+
+.backdrop {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: 3;
+  background-color: #00000033;
+}
+
+.drawerContain {
+  width: 60vw;
+  height: 100vh;
+  right: 0;
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: white;
+  box-shadow: -3px 0 10px #00000099;
+  transform: translateX(-100%)
+}
+
+.drawerContain.open {
+  transform: translateX(0)
+}
+
+.menuListMobile {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
+}
+
+.menuListMobile li {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2vh 10vw 2vh 0
 }
 
 /* scrollContain */
@@ -150,4 +218,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .dataVar {
   width: 36vw
+}
+
+@media only screen and (min-width: 600px) {
+  .menuIcon, .exitMenuIcon {
+    display: none
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menuListDesktop {
+    display: none
+  }
 }
