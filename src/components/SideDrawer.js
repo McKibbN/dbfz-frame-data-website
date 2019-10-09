@@ -11,7 +11,7 @@ class SideDrawer extends React.Component {
   render() {
     return (
       <div>
-        <div className={this.props.show ? 'drawerContain open' : 'drawerContain'} >
+        <div className='drawerContain'>
           <Cross className='exitMenuIcon' onClick={this.props.drawerClickHandle} />
           <ul className='menuListMobile'>
             <li>
