@@ -11,7 +11,7 @@ import CharImg from '../assets/16Card.png'
 
     render () {
       return (
-        <div className='charCardContain'>
+        <div className='charCard'>
           <img className='charImg' src={CharImg} alt='character'/>
           <div className='charNameContain'>
             <h4 className='charName'>{this.state.charName}</h4>

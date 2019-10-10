@@ -1,5 +1,6 @@
 import React, { Component }from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import LoadingScreen from './components/LoadingScreen.js'
 import Header from './components/Header.js'
 import SideDrawer from './components/SideDrawer.js'
 import CharList from './components/characterList/CharList.js'
@@ -11,10 +12,19 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      sideDrawerOpen: false
+      sideDrawerOpen: false,
+      isLoading: true
     }
     this.drawerClickHandle = this.drawerClickHandle.bind(this)
   }
+
+  componentDidMount() {
+        setTimeout(() => {
+            this.setState({
+                isLoading: false
+            })
+        }, 3000)
+    }
 
   drawerClickHandle() {
     this.setState(prevState => {
@@ -26,6 +36,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className='App'>
+          {this.state.isLoading ? <LoadingScreen /> : null}
           <Header drawerClickHandle={this.drawerClickHandle}/>
           {
             this.state.sideDrawerOpen

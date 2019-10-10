@@ -5,7 +5,7 @@ import CharacterCard from './CharacterCard.js'
 function CharList () {
   return (
     <div className='scrollContain'>
-      <Link to='/moveList'>
+      <Link className='charCardContain' to='/moveList'>
         <CharacterCard />
       </Link>
     </div>
