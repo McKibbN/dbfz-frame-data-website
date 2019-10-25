@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { ReactComponent as Cross } from './assets/cross.svg';
 
 class SideDrawer extends React.Component {

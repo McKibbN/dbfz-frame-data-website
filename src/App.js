@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component }from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import LoadingScreen from './components/LoadingScreen.js'
 import Header from './components/Header.js'
@@ -19,11 +19,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-      setTimeout(() => {
-          this.setState({
-              isLoading: false
-          })
-      }, 3000)
+        setTimeout(() => {
+            this.setState({
+                isLoading: false
+            })
+        }, 3000)
     }
 
   drawerClickHandle() {
